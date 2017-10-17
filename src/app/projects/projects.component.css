@@ -1,0 +1,91 @@
+.gallery {
+  display: table;
+  text-align: center;
+  padding: 30px 0 0 0;
+  background: rgba(20,20,20, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.head {
+  padding: 100px 0 80px 0;
+  margin: 0 10%;
+  text-align: center;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  background: #000000;
+  height: 500px;
+}
+figure:hover .btn-view {
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+figure:hover img {
+  bottom: 3.75em;
+  opacity: 0.5;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+img {
+  position: relative;
+  bottom: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+figcaption {
+  position: absolute;
+  bottom: -3.75em;
+  text-align: right;
+  background: #FAFAFA;
+  z-index: 9;
+  cursor: default;
+  width: 100%;
+  height: 3.75em;
+  -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+
+.btn {
+  position: relative;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  -webkit-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-view {
+  position: absolute;
+  top: 15.625em;
+  left: 6.875em;
+  opacity: 0;
+  z-index: 99;
+  padding: 1em 2.5em;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(20,20,20, 0.5);
+  z-index: 9999;;
+  border: solid 1px #fff;
+  cursor: pointer;
+  border-radius: 0;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn-view:hover {
+    background-color: rgba(60, 194, 255, .6);
+}

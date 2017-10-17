@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Raleway:100);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*  Nav bar */
+#nav {
+    background: rgba(20,20,20, 0.5);
+    z-index:9999;
+    margin:0px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#logo {
+    text-decoration:underline;
+}
+
+#navHeading {
+    font-size: 38px;
+    color: #fff;
+    text-shadow: -1px 1px 1px black;
+    font-family: 'Slabo 27px', serif;
+}
+
+/* Utilities */
+.nopadding {
+    padding: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+

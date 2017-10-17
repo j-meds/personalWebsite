@@ -1,0 +1,59 @@
+#footer {
+    background: #eee;
+    padding: 30px 30px 40px 0;
+    margin-top : 200px;
+    font-family: Lato, sans-serif;
+}
+
+.head {
+    color: #8a8a8a;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.underline {
+    width: 70px;
+    height: 15px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    border-bottom: 3px solid rgb(60, 194, 255);
+}
+
+.aboutImg {
+    padding: 5px;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+}
+
+p {
+    margin: 0;
+}
+p.desc {
+    margin: 10px 0 0 0;
+    padding-bottom: 0px;
+    font-size: 11px;
+}
+p.ans {
+    font-size: 17px;
+    font-weight: 700;
+}
+p.aboutTxt {
+    font-size: 14px;
+    padding: 10px 0 20px 0;
+}
+
+div#skills {
+    text-align: center;
+    font-size: 20px;
+    font-family: Lato, sans-serif;    
+}
+.list {
+    list-style-type: none;
+    text-align: center;
+}
+#copy {
+    text-align: center;
+    padding: 30px 0 50px 0;
+    color: white;
+}
