@@ -1,24 +1,10 @@
 const express = require('express');
-const path = require('path');
-const http = require('http');
-const bodyParser = require('body-parser');
+const app = express();
 const port = process.env.PORT || '3000';
 
-const app = express();
-
-// Point express to the static files
-app.use(express.static(path.join(__dirname, 'dist')));
-
-// Send all routes to the index file
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/index.html'));
-});
-
-// set the port
-app.set('port', port);
-
-// Create HTTP server
-const server = http.createServer(app);
-
-// Listen on provided port, on all network interfaces.
-server.listen(port, () => console.log(`App running on localhost:${port}`))
+// Run the app by serving the static files
+// in the dist directory
+app.use(express.static(__dirname + '/dist'));
+// Start the app by listening on the default
+// Heroku port
+app.listen(process.env.PORT || 3000, () => console.log(`App running on localhost:${port}`));
